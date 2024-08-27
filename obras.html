@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras</title>
+    <style>
+        body {
+            margin: 0;
+        }    
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FF8100;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+            background-color: #AA7139;
+        }
+
+        .imagem_vincent {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #806040;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-style: normal;
+            background-color: #D57C23;
+        }
+
+        .infos {
+            background-color: #806040;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FF8100;
+            color: #332F2B;
+            text-align: center;
+        }
+
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #AA7139;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #332F2B 1px;
+        }
+
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #FF8100;
+            color: #332F2B;
+        }
+
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img{
+            width: 155px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+            
+           /* .container {
+                max-width: 1200px;
+                margin: auto;
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis*/
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_vincent {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: #332F2B; text-align: center;">Obras de Vincent Van Gogh</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_vincent">
+            <img src="vangoghmuseum-s0022V1962-800.jpg" style="width: 100%;">
+            <div class="infos">
+                <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                <p><strong>Ocupação</strong> Pintor pós-impressionista neerlandês</p>
+                <p><strong>Data de Nascimento</strong> 30/03/1853</p>
+                <p><strong>Data de Morte</strong> 29/07/1890 (37 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>Obras</h1>
+            <div class="card">
+                <div class="img">
+                    <img src="vangoghmuseum-s0005V1962-800.jpg">
+                    <div class="">
+                        <h2>Os Comedores de Batatas</h2>
+                        <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="vangoghmuseum-s0176V1962-800.jpg">
+                    <div class="">
+                        <h2>Amendoeira em Flor</h2>
+                        <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="vangoghmuseum-s0179V1962-800.jpg">
+                    <div class="">
+                        <h2>Cesta com Bulbos de Açafrão</h2>
+                        <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="vangoghmuseum-s0011V1962-800.jpg">
+                    <div class="">
+                        <h2>Um Par de Sapatos</h2>
+                        <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais.</h1>
+    </footer>
+</body>
+</html>
