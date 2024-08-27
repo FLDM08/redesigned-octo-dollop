@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+    <style>
+        body {
+            margin: 0;
+        }
+ 
+        .container { 
+            display: grid;
+        }
+ 
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FF8100;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* centraliza o menu */
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+            background-color: #AA7139;
+        }
+  
+        .imagem_vincent {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #806040;
+        }
+ 
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-style: oblique;
+            background-color: #D57C23;
+        }
+
+        .infos {
+            background-color: #806040;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FF8100;
+            color: #332F2B;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #AA7139;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #332F2B 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #FF8100;
+            color: #332F2B;
+        }
+
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_vincent {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: #332F2B; text-align: center;">Curiosidades de Vincent Van Gogh</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_vincent">
+            <img src="vangoghmuseum-s0022V1962-800.jpg" style="width: 100%;">
+            <div class="infos">
+                <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                <p><strong>Ocupação</strong> Pintor pós-impressionista neerlandês</p>
+                <p><strong>Data de Nascimento</strong> 30/03/1853</p>
+                <p><strong>Data de Morte</strong> 29/07/1890 (37 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1 style="font-style: normal;">
+                Vincent Van Gogh
+            </h1>
+            <p>Em 1878, Van Gogh já havia acumulado três carreiras fracassadas: como negociante de arte, professor e livreiro.</p>
+            <p>Nos anos de 1878 a 1880, ele abandonou seus estudos de teologia antes mesmo de assistir a uma aula, foi rejeitado em um curso de formação para se tornar evangelista em Bruxelas, e sua nomeação como pregador leigo (uma posição que não exigia formação oficial) nem sequer foi renovada.</p>
+            <p>Vincent foi tomado por uma depressão severa durante quase um ano e foi deixado completamente por conta própria. Ele eventualmente decidiu seguir o conselho de Theo e se tornar artista.</p>
+            <p>Vincent van Gogh cortou sua orelha esquerda após uma briga com Paul Gauguin, o artista com quem havia trabalhado por um tempo em Arles. Esse foi o resultado do primeiro grande colapso mental de Vincent.</p>
+            <p>Em 27 de julho de 1890, em um campo perto de Auvers, Vincent atirou em seu próprio peito com um revólver. Ele morreu dois dias depois, com seu irmão Theo ao seu lado.</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais.</h1>
+    </footer>
+</body>
+</html>
