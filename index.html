@@ -1,26 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Vincent Van Gogh</title>
+    <style>
+        body {
+            margin: 0;
+        }
+ 
+        .container { 
+            display: grid;
+        }
+ 
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FF8100;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* centraliza o menu */
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+            background-color: #AA7139;
+        }
+  
+        .imagem_vincent {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #806040;
+        }
+ 
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            background-color: #D57C23;
+        }
+
+        .infos {
+            background-color: #AA7139;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FF8100;
+            color: #332F2B;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #AA7139;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #332F2B 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #FF8100;
+            color: #332F2B;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_vincent {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td colspan="2">Linha 1 Colunas 1 e 2</td>
-            <td rowspan="2">Coluna 3 Linhas 1 e 2 </td>
-        </tr>
-        <tr>
-            <td>Linha 2 Celula 1</td>
-            <td>Linha 2 Celula 2 </td>
-        </tr>
-        <tr>
-            <td>Linha 3 Celula 1</td>
-            <td>Linha 3 Celula 2</td>
-            <td>Linha 3 Celula 3</td>
-        </tr>
+    <header class="container">
+        <h1 style="color: #332F2B; text-align: center;">Biografia Vincent Van Gogh</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="infos">
+            <img src="vangoghmuseum-s0022V1962-800.jpg">
+            <div class="infos">
+                <p>Créditos: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</p>
+                <p><strong>Ocupação</strong> Pintor pós-impressionista neerlandês</p>
+                <p><strong>Data de Nascimento</strong> 30/03/1853</p>
+                <p><strong>Data de Morte</strong> 29/07/1890 (37 anos)</p>
+            </div>
 
-    </table>
+        </aside>
+        <section class="principal">
+            <h1>
+                Vincent Van Gogh
+            </h1>
+            <p>Vincent van Gogh nasceu na vila de Zundert, em Brabant, em 30 de março de 1853. Ele não foi o primeiro filho do pastor protestante Theodorus van Gogh e Anna Carbentus: outro filho (também chamado Vincent) havia nascido morto exatamente um ano antes, na mesma data.</p>
+
+            <p>Felizmente, o nascimento do segundo Vincent ocorreu sem complicações e foi seguido pelo de três irmãs e dois irmãos: Anna, Theo, Wil, Lies e Cor. A família Van Gogh costumava fazer caminhadas frequentes na região ao redor de Zundert, o que ajudou a despertar um grande amor pela natureza no futuro artista.</p>
+            
+            <p>Vincent não encontrou sua direção na vida até os 27 anos de idade. Ele tentou diferentes empregos, desde negociante de arte até professor e pregador leigo. Eventualmente, ele encontrou sua vocação seguindo o conselho de seu irmão mais novo, Theo.</p>
+            
+            <p>Os pais de Vincent não ficaram muito felizes com o sonho do filho de seguir a vida de artista. Felizmente, isso não impediu Vincent de trabalhar duro e aprimorar suas habilidades. Ele viveu em vários lugares na Holanda. Em Haia, ele teve aulas de pintura e desenho com seu tio, o artista Anton Mauve. O amor também serviu como fonte de inspiração.</p>
+
+            <p>Vincent voltou a morar com seus pais em Nuenen. Lá, Vincent van Gogh pintou e esboçou fazendeiros, tecelões e trabalhadores. Ele começou a trabalhar em <strong>Os Comedores de Batatas.</strong> Para se desenvolver como artista, ele primeiro se mudou para Antuérpia por alguns meses e, em seguida, para Paris.</p>
+
+            <p>Em Paris, Vincent desenvolveu seu estilo próprio e bem conhecido, com cores vibrantes. No entanto, após dois anos, a vida agitada na cidade, que no início lhe trouxe tanta inspiração, tornou-se excessiva.</p>
+
+            <p>O tempo de Vincent no sul da França foi um período turbulento em sua vida. Ele adoeceu e cortou a própria orelha, mas continuou trabalhando, apesar de tudo. Durante esse período, ele produziu algumas de suas obras mais famosas.</p>
+
+            <p>Vincent van Gogh passou um ano no hospital psiquiátrico em Saint-Rémy-de-Provence. Apesar de sua saúde mental instável, ele foi muito produtivo: fez cerca de 150 pinturas em um ano, incluindo <strong>Amendoeira em Flor.</strong></p>
+
+            <p>Vincent passou os últimos meses de sua vida em Auvers-sur-Oise: uma vila de artistas perto de Paris. Ele fez novos amigos e se dedicou à pintura. No entanto, após uma visita a Theo, Vincent ficou muito preocupado com seu futuro financeiro. Essa incerteza, somada aos seus problemas de saúde mental, tornou-se insuportável. Vincent tirou a própria vida em julho de 1890.</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais.</h1>
+    </footer>
 </body>
 </html>
